@@ -158,6 +158,18 @@
   dependencies:
     tslib "^1.7.1"
 
+"@ionic-native/core@^4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-4.5.2.tgz#56c1ee0d3e9dd3f02c29c26eeb868ab36a48a6f5"
+
+"@ionic-native/device@^4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@ionic-native/device/-/device-4.5.2.tgz#582a26bb4de8bdad7aa19170423d32a68d45089a"
+
+"@ionic-native/splash-screen@^4.5.2":
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-4.5.2.tgz#f4484e8a50e33edacfd07f934c118635c78772cd"
+
 "@ngtools/json-schema@1.1.0", "@ngtools/json-schema@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@ngtools/json-schema/-/json-schema-1.1.0.tgz#c3a0c544d62392acc2813a42c8a0dc6f58f86922"
@@ -1224,6 +1236,14 @@ cordova-common@^2.1.0:
     shelljs "^0.5.3"
     underscore "^1.8.3"
     unorm "^1.3.3"
+
+cordova-plugin-device@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-device/-/cordova-plugin-device-1.1.7.tgz#fc94111be6932628c66868938ddf3dc82c9fbfe6"
+
+cordova-plugin-splashscreen@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-splashscreen/-/cordova-plugin-splashscreen-4.1.0.tgz#81028ab7643e615593d27f2ad02445611f1946b6"
 
 cordova-plugin-whitelist@^1.3.3:
   version "1.3.3"
