@@ -1,9 +1,13 @@
 import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
-import {Device} from '@ionic-native/device';
+import {environment} from '@env/environment';
 
+import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/do';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
+import 'rxjs/add/operator/filter';
+import 'rxjs/add/operator/merge';
+import 'rxjs/add/operator/take';
 import {Observable} from 'rxjs/Observable';
 
 @Component({
@@ -12,18 +16,16 @@ import {Observable} from 'rxjs/Observable';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	title = 'app';
-	platform$: BehaviorSubject<string>;
+	constructor(private router: Router) {
 
-	constructor(private device: Device) {
-		this.platform$ = new BehaviorSubject<string>('not yet');
+		console.log('Cordova => ', environment.cordova);
 
-		Observable.fromEvent(document, 'deviceready')
+		Observable.of(navigator.userAgent)
+				.do(userAgent => console.log(userAgent))
+				.filter(userAgent => !userAgent.match(/(iPhone|iPod|iPad|Android)/))
+				.merge(() => Observable.fromEvent(document, 'deviceready'))
 				.do(() => console.log('deviceready'))
-				.subscribe(() => this.platform$.next(this.device.platform));
-	}
-
-	log() {
-		console.log(this.platform$.getValue());
+				.take(1)
+				.subscribe(() => this.router.navigateByUrl('/core'));
 	}
 }
