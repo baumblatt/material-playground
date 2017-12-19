@@ -1,7 +1,8 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {CordovaService} from '@app/cordova.service';
 
-import {Device} from '@ionic-native/device';
+import {SplashScreen} from '@ionic-native/splash-screen';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -14,7 +15,7 @@ import {AppComponent} from './app.component';
 		BrowserModule,
 		AppRoutingModule
 	],
-	providers: [Device],
+	providers: [CordovaService, SplashScreen],
 	bootstrap: [AppComponent]
 })
 export class AppModule {

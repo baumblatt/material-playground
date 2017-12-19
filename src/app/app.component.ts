@@ -1,14 +1,11 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 
-import {environment} from '@env/environment';
+import {CordovaService} from '@app/cordova.service';
 
-import 'rxjs/add/observable/of';
+import {SplashScreen} from '@ionic-native/splash-screen';
+
 import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/merge';
-import 'rxjs/add/operator/take';
-import {Observable} from 'rxjs/Observable';
 
 @Component({
 	selector: 'app-root',
@@ -16,16 +13,11 @@ import {Observable} from 'rxjs/Observable';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	constructor(private router: Router) {
+	constructor(private router: Router, private cordovaService: CordovaService, private splashScreen: SplashScreen) {
 
-		console.log('Cordova => ', environment.cordova);
-
-		Observable.of(navigator.userAgent)
-				.do(userAgent => console.log(userAgent))
-				.filter(userAgent => !userAgent.match(/(iPhone|iPod|iPad|Android)/))
-				.merge(() => Observable.fromEvent(document, 'deviceready'))
-				.do(() => console.log('deviceready'))
-				.take(1)
-				.subscribe(() => this.router.navigateByUrl('/core'));
+		// listener of cordova initialization
+		cordovaService.deviceReady
+				.do(() => this.router.navigateByUrl('/core'))
+				.subscribe(() => this.splashScreen.hide());
 	}
 }
