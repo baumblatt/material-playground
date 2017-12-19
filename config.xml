@@ -7,8 +7,8 @@
     <author email="baumblatt@gmail.com" href="https://baumblatt.mybluemix.net">
         Bernardo Baumblatt
     </author>
-    <content originalcor-src="index.html" src="http://192.168.25.3:4200" />
-    <allow-navigation href="http://192.168.25.3:4200" />
+    <content originalcor-src="index.html" src="http://MY_IP_ADDRESS:8200" />
+    <allow-navigation href="http://MY_IP_ADDRESS:8200" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -41,8 +41,10 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="LoadUrlTimeoutValue" value="60000" />
     <engine name="android" spec="^6.4.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <plugin name="cordova-plugin-device" spec="^1.1.7" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.1.0" />
 </widget>

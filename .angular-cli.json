@@ -46,7 +46,8 @@
 			"environments": {
 				"dev": "environments/environment.ts",
 				"prod": "environments/environment.prod.ts",
-				"cordova": "environments/environment.cordova.ts"
+				"cordova": "environments/environment.cordova.ts",
+				"cordova-prod": "environments/environment.cordova-prod.ts"
 			}
 		}
 	],
@@ -75,7 +76,7 @@
 		}
 	},
 	"defaults": {
-		"styleExt": "css",
+		"styleExt": "scss",
 		"serve": {
 			"port": 4200,
 			"host": "0.0.0.0"
