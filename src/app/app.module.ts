@@ -1,5 +1,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import {CordovaService} from '@app/cordova.service';
 
 import {SplashScreen} from '@ionic-native/splash-screen';
@@ -13,6 +15,7 @@ import {AppComponent} from './app.component';
 	],
 	imports: [
 		BrowserModule,
+		BrowserAnimationsModule,
 		AppRoutingModule
 	],
 	providers: [CordovaService, SplashScreen],
