@@ -2,13 +2,14 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
 import {HomeComponent} from '@app/core/pages/home/home.component';
+import {MaterialModule} from '@app/material/material.module';
 
 const routes: Routes = [
 	{path: '', component: HomeComponent}
 ];
 
 @NgModule({
-	imports: [RouterModule.forChild(routes)],
+	imports: [MaterialModule, RouterModule.forChild(routes)],
 	exports: [RouterModule],
 	declarations: [HomeComponent]
 })

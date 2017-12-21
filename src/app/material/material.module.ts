@@ -3,7 +3,7 @@ import {MatToolbarModule} from '@angular/material';
 
 @NgModule({
 	imports: [MatToolbarModule],
-	declarations: []
+	exports: [MatToolbarModule]
 })
 export class MaterialModule {
 }
