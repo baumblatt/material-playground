@@ -1,17 +1,16 @@
-import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 
+import {LayoutComponent} from '@app/core/components/layout/layout.component';
 import {CoreRoutingModule} from '@app/core/core-routing.module';
 import {HomeComponent} from '@app/core/pages/home/home.component';
-import {MaterialModule} from '@app/material/material.module';
+import {SharedModule} from '@app/shared/shared.module';
 
 @NgModule({
 	imports: [
-		CommonModule,
-		CoreRoutingModule,
-		MaterialModule
+		SharedModule,
+		CoreRoutingModule
 	],
-	declarations: [HomeComponent]
+	declarations: [HomeComponent, LayoutComponent]
 })
 export class CoreModule {
 }
