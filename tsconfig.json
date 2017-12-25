@@ -19,7 +19,8 @@
     "paths": {
       "@app/*": ["app/*"],
       "@env/*": ["environments/*"],
-      "@shared/*": ["app/shared/*"]
+      "@shared/*": ["app/shared/*"],
+      "@sample/*": ["app/sample/*"]
     }
   }
 }
