@@ -1,3 +1,4 @@
+///<reference path="../../node_modules/rxjs/add/operator/do.d.ts"/>
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 
@@ -13,11 +14,12 @@ import 'rxjs/add/operator/do';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
 	constructor(private router: Router, private cordovaService: CordovaService, private splashScreen: SplashScreen) {
 
-		// listener of cordova initialization
+		// listener Cordova initialization and navigate if needed!
 		cordovaService.deviceReady
-				.do(() => this.router.navigateByUrl('/core'))
+				.do(() => window.location.pathname === '/' ? this.router.navigateByUrl('/core') : '')
 				.subscribe(() => this.splashScreen.hide());
 	}
 }
