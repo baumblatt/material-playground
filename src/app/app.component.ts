@@ -15,9 +15,9 @@ import 'rxjs/add/operator/do';
 export class AppComponent {
 	constructor(private router: Router, private cordovaService: CordovaService, private splashScreen: SplashScreen) {
 
-		// listener of cordova initialization
+		// listener Cordova initialization and navigate if needed!
 		cordovaService.deviceReady
-				.do(() => this.router.navigateByUrl('/core'))
+				.do(() => window.location.pathname === '/' ? this.router.navigateByUrl('/core') : '')
 				.subscribe(() => this.splashScreen.hide());
 	}
 }
