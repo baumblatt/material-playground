@@ -1,0 +1,25 @@
+// Import all the tools needed to customize the theme and extract parts of it
+@import '~@angular/material/theming';
+
+// Define a mixin that accepts a theme and outputs the color styles for the component.
+@mixin sidenav-layout-theme($theme) {
+	// Extract whichever individual palettes you need from the theme.
+	$primary: map-get($theme, primary);
+	$background: map-get($theme, background);
+	$selected: map-get($background, selected-button);
+
+	div.app-container {
+		mat-sidenav-container.app-sidenav-container {
+			mat-sidenav.start {
+				.active {
+					background-color: $selected;
+					color: mat-color($primary);
+				}
+
+				.active md-icon {
+					color: mat-color($primary);
+				}
+			}
+		}
+	}
+}

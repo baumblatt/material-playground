@@ -1,10 +1,10 @@
-$prm-theme-primary: mat-palette($mat-brown);
-$prm-theme-accent: mat-palette($mat-amber);
-$prm-theme-warn: mat-palette($mat-deep-orange);
+$app-theme-primary: mat-palette($mat-brown);
+$app-theme-accent: mat-palette($mat-amber);
+$app-theme-warn: mat-palette($mat-deep-orange);
 
 // create theme (use mat-dark-theme for themes with dark backgrounds)
 $app-theme: mat-light-theme(
-				$prm-theme-primary,
-				$prm-theme-accent,
-				$prm-theme-warn
+				$app-theme-primary,
+				$app-theme-accent,
+				$app-theme-warn
 );
