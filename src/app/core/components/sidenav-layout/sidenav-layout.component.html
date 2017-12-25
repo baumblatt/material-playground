@@ -1,0 +1,17 @@
+<div class="app-container">
+  <mat-toolbar class="header" color="primary" role="header">
+    <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+    <span>Material Playground</span>
+  </mat-toolbar>
+  <mat-sidenav-container class="app-sidenav-container">
+    <mat-sidenav [fixedInViewport]="fixedInViewport" #sidenav class="start">
+      <div class="profile">
+
+      </div>
+      Hello SideNav
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
