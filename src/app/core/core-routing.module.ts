@@ -11,7 +11,8 @@ const routes: Routes = [
 	{
 		path: '', component: SidenavLayoutComponent,
 		children: [
-			{path: 'home', component: HomeComponent}
+			{path: 'home', component: HomeComponent},
+			{path: 'sample', loadChildren: 'app/sample/sample.module#SampleModule'}
 		]
 	},
 	{
