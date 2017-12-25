@@ -7,6 +7,8 @@
 
 // import our custom theme files
 @import 'theme/colors.scss';
+// import our custom components theme files
+@import 'theme/components.scss';
 
 // specify theme class eg: <body class="app-theme"> ... </body>
 .app-theme {
