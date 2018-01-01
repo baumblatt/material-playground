@@ -1,4 +1,3 @@
-///<reference path="../../node_modules/rxjs/add/operator/do.d.ts"/>
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 
