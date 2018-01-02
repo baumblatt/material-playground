@@ -5,5 +5,8 @@
 
 export const environment = {
 	production: false,
-	cordova: false
+	cordova: false,
+	sidenav: {
+		fixedInViewport: false
+	}
 };

@@ -1,1 +1,8 @@
-// Using the $app-theme variable from the pre-built theme you can call the component theming function
+@import '../app/core/components/bottom-nav-layout/_bottom-nav-layout.component';
+@import '../app/core/components/double-nav-layout/_double-nav-layout.component';
+@import '../app/core/components/sidenav-layout/_sidenav-layout.component';
+
+// Using the $theme variable from the pre-built theme you can call the theming function
+@include sidenav-layout-theme($app-theme);
+@include bottom-navigation-layout-theme($app-theme);
+@include double-navigation-layout-theme($app-theme);

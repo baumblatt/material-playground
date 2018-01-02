@@ -1,0 +1,22 @@
+<mat-toolbar class="header" color="primary" role="header">
+  <span>Material Playground</span>
+</mat-toolbar>
+
+<section class="content">
+  <router-outlet></router-outlet>
+</section>
+
+<nav class="bottom-nav">
+  <a routerLink="/core/bottom/home" class="bottom-nav__action" routerLinkActive="bottom-nav__action--active">
+	  <mat-icon class="bottom-nav__icon">home</mat-icon>
+	  <span class="bottom-nav__label">Home</span>
+  </a>
+  <a routerLink="/core/bottom/sample/first" class="bottom-nav__action" routerLinkActive="bottom-nav__action--active">
+	  <mat-icon class="bottom-nav__icon">label</mat-icon>
+	  <span class="bottom-nav__label">First</span>
+  </a>
+  <a routerLink="/core/bottom/sample/second" class="bottom-nav__action" routerLinkActive="bottom-nav__action--active">
+	  <mat-icon class="bottom-nav__icon">label</mat-icon>
+	  <span class="bottom-nav__label">Second</span>
+  </a>
+</nav>

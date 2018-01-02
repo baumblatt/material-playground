@@ -1,3 +1,4 @@
+///<reference path="../../node_modules/rxjs/add/operator/do.d.ts"/>
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 
@@ -13,6 +14,7 @@ import 'rxjs/add/operator/do';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
 	constructor(private router: Router, private cordovaService: CordovaService, private splashScreen: SplashScreen) {
 
 		// listener Cordova initialization and navigate if needed!
