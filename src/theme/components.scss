@@ -1,4 +1,6 @@
 @import '../app/core/components/sidenav-layout/sidenav-layout.component';
+@import '../app/core/components/bottom-nav-layout/_bottom-nav-layout.component';
 
 // Using the $theme variable from the pre-built theme you can call the theming function
 @include sidenav-layout-theme($app-theme);
+@include bottom-navigation-layout-theme($app-theme);

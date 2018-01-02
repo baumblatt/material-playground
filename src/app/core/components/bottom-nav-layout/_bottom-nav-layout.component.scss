@@ -1,0 +1,24 @@
+// Import all the tools needed to customize the theme and extract parts of it
+@import '~@angular/material/theming';
+
+// Import the material bottom navigation scss
+@import '~material-bottom-nav';
+
+// Define a mixin that accepts a theme and outputs the color styles for the component.
+@mixin bottom-navigation-layout-theme($theme) {
+	// Extract whichever individual palettes you need from the theme.
+	$primary: map-get($theme, primary);
+	$background: map-get(map-get($theme, background), background);
+
+
+	.bottom-nav {
+		// little fix for mat-icon uses.
+		.mat-icon {
+			display: block;
+			width: 1em;
+			height: 1em;
+		}
+
+		@include bottom-nav($background-color: $background, $active-color: mat-color($primary), $inactive-color: rgba(0,0,0,.54), $hide-inactive-labels: false);
+	}
+}
