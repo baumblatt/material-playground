@@ -10,15 +10,16 @@
 	$primary: map-get($theme, primary);
 	$background: map-get(map-get($theme, background), background);
 
+	app-bottom-nav-layout {
+		.bottom-nav {
+			// little fix for mat-icon uses.
+			.mat-icon {
+				display: block;
+				width: 1em;
+				height: 1em;
+			}
 
-	.bottom-nav {
-		// little fix for mat-icon uses.
-		.mat-icon {
-			display: block;
-			width: 1em;
-			height: 1em;
+			@include bottom-nav($background-color: $background, $active-color: mat-color($primary), $inactive-color: rgba(0,0,0,.54), $hide-inactive-labels: false);
 		}
-
-		@include bottom-nav($background-color: $background, $active-color: mat-color($primary), $inactive-color: rgba(0,0,0,.54), $hide-inactive-labels: false);
 	}
 }
