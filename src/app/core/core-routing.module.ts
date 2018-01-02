@@ -19,6 +19,7 @@ const routes: Routes = [
 	{
 		path: 'bottom', component: BottomNavLayoutComponent,
 		children: [
+			{path: '', pathMatch: 'full', redirectTo: 'home'},
 			{path: 'home', component: HomeComponent},
 			{path: 'sample', loadChildren: 'app/sample/sample.module#SampleModule'}
 		]
@@ -26,6 +27,7 @@ const routes: Routes = [
 	{
 		path: 'plain', component: LayoutComponent,
 		children: [
+			{path: '', pathMatch: 'full', redirectTo: 'home'},
 			{path: 'home', component: HomeComponent},
 			{path: 'sample', loadChildren: 'app/sample/sample.module#SampleModule'}
 		]
