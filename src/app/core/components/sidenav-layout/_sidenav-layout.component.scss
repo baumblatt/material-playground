@@ -8,16 +8,18 @@
 	$background: map-get($theme, background);
 	$selected: map-get($background, selected-button);
 
-	div.app-container {
-		mat-sidenav-container.app-sidenav-container {
-			mat-sidenav.start {
-				.active {
-					background-color: $selected;
-					color: mat-color($primary);
-				}
+	app-sidenav-layout {
+		div.app-container {
+			mat-sidenav-container.app-sidenav-container {
+				mat-sidenav.start {
+					.active {
+						background-color: $selected;
+						color: mat-color($primary);
+					}
 
-				.active md-icon {
-					color: mat-color($primary);
+					.active md-icon {
+						color: mat-color($primary);
+					}
 				}
 			}
 		}
