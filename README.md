@@ -32,4 +32,5 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Donations
 
-Is this project util for you? Please consider [buy me a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=baumblatt%40gmail%2ecom&lc=BR&item_name=Bernardo%20Baumblatt&item_number=Material%20Playground&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted). 
+
+Is this project util for you? Please consider [buy me a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=baumblatt%40gmail%2ecom&lc=BR&item_name=Bernardo%20Baumblatt&item_number=Material%20Playground&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted).
