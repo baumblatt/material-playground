@@ -81,6 +81,9 @@
 			"port": 4200,
 			"host": "0.0.0.0"
 		},
-		"component": {}
+		"component": {},
+		"schematics": {
+			"collection": "@ngrx/schematics"
+		}
 	}
 }
