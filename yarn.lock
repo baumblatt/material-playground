@@ -178,6 +178,26 @@
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-4.5.2.tgz#f4484e8a50e33edacfd07f934c118635c78772cd"
 
+"@ngrx/effects@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/effects/-/effects-5.0.0.tgz#8c815e26dcfdd87e3da03ad90f13b97f5df88b73"
+
+"@ngrx/router-store@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/router-store/-/router-store-5.0.0.tgz#035d28a38c0e58a0f34c3b4b7f6b8a3aab4dacb0"
+
+"@ngrx/schematics@github:ngrx/schematics-builds":
+  version "5.0.0"
+  resolved "https://codeload.github.com/ngrx/schematics-builds/tar.gz/183b8284ae9080316867f98e0a04b0409e0ac027"
+
+"@ngrx/store-devtools@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-5.0.0.tgz#df30d79f524c2b7c73077c084732d1b7ebefab95"
+
+"@ngrx/store@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-5.0.0.tgz#483a955ea99a63ee083675ce0596d505e5501747"
+
 "@ngtools/json-schema@1.1.0", "@ngtools/json-schema@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@ngtools/json-schema/-/json-schema-1.1.0.tgz#c3a0c544d62392acc2813a42c8a0dc6f58f86922"
