@@ -15,13 +15,19 @@
 		div.app-container {
 			mat-sidenav-container.app-sidenav-container {
 				mat-sidenav.start {
-					.active {
-						background-color: $selected;
-						color: mat-color($primary);
-					}
+					color: rgba(0,0,0,.54);
 
-					.active md-icon {
-						color: mat-color($primary);
+					.mat-nav-list .mat-list-item {
+						color: inherit;
+
+						&.active {
+							background-color: $selected;
+							color: mat-color($primary);
+						}
+
+						&.active md-icon {
+							color: mat-color($primary);
+						}
 					}
 				}
 
